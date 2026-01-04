@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching · Prof. Youness Boutyour</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="nav" aria-label="Primary">
+        <div class="nav__brand">
+            <span class="nav__name">Prof. Youness Boutyour</span>
+            <span class="nav__role">Associate Professor · AI & Distributed Systems</span>
+        </div>
+        <div class="nav__links">
+            <a href="index.html#overview">Home</a>
+            <a href="research.html">Research</a>
+            <a href="teaching.html" aria-current="page">Teaching</a>
+            <a href="blog.html">Blog</a>
+            <a href="cv.html">CV</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+        <a class="btn primary small nav__cta" href="index.html#contact">Schedule a meeting</a>
+    </nav>
+
+    <header class="page-hero">
+        <div>
+            <p class="eyebrow">Teaching & mentoring</p>
+            <h1>Learning pathways from undergraduate to postgraduate levels</h1>
+            <p class="subtitle">Studios, labs, and custom bootcamps on Artificial Intelligence, Deep Reinforcement Learning, Multi-Agent Systems, and constraint-aware intelligence.</p>
+        </div>
+        <div class="teaching-metrics">
+            <article class="metric-card">
+                <p class="metric-card__value">6+</p>
+                <p class="metric-card__label">Studios per semester</p>
+            </article>
+            <article class="metric-card">
+                <p class="metric-card__value">14</p>
+                <p class="metric-card__label">Long-form labs delivered</p>
+            </article>
+            <article class="metric-card">
+                <p class="metric-card__value">12</p>
+                <p class="metric-card__label">Theses & internships yearly</p>
+            </article>
+            <article class="metric-card">
+                <p class="metric-card__value">3</p>
+                <p class="metric-card__label">Degree pathways</p>
+            </article>
+        </div>
+    </header>
+
+    <main class="teaching-page">
+        <section class="section">
+            <div class="teaching-highlight-grid">
+                <article class="teaching-highlight">
+                    <h3>Studios & bootcamps</h3>
+                    <p>Project-based sessions combining code reviews, peer feedback, and civic datasets.</p>
+                    <ul>
+                        <li>6 recurring studios per semester.</li>
+                        <li>Focus on responsible AI and distributed systems.</li>
+                    </ul>
+                </article>
+                <article class="teaching-highlight">
+                    <h3>Mentoring impact</h3>
+                    <p>Close supervision of master theses, internships, and doctoral research on multi-agent AI.</p>
+                    <ul>
+                        <li>6 master theses + 8 long internships yearly.</li>
+                        <li>Joint supervision of CIFRE and Marie Curie fellows.</li>
+                    </ul>
+                </article>
+                <article class="teaching-highlight">
+                    <h3>Learning pathways</h3>
+                    <p>Curricula that blend constraint solving, deep RL, and logic intelligence for applied research.</p>
+                    <ul>
+                        <li>Tracks for undergrad to postgraduate cohorts.</li>
+                        <li>Open courseware for community partners.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section--panel" id="resources">
+            <div class="section__header">
+                <p class="eyebrow">Open courseware</p>
+                <h2>Courses, studios, and labs</h2>
+            </div>
+            <div class="teaching-lab-grid">
+                <aside class="resource-aside">
+                    <p class="eyebrow">Academic tracks</p>
+                    <div class="pill-group">
+                        <span class="pill">Master in AI & Data</span>
+                        <span class="pill">Undergraduate Computer Science</span>
+                        <span class="pill">Mentoring & Supervision</span>
+                    </div>
+                    <ul class="resource-aside__list">
+                        <li><strong>Master AI & Data</strong><span>Studios + labs · 6 ECTS</span></li>
+                        <li><strong>Undergraduate CS</strong><span>Constraint solving + logic</span></li>
+                        <li><strong>Bootcamps</strong><span>Deep RL & civic deployments</span></li>
+                    </ul>
+                    <div class="resource-schedule">
+                        <h4>Upcoming sessions</h4>
+                        <ul>
+                            <li><span>Apr 2024</span>Deep RL clinics · Cohort M2</li>
+                            <li><span>May 2024</span>Constraint bootcamp · Graduate track</li>
+                            <li><span>Jun 2024</span>Assessment collective · Faculty lab</li>
+                        </ul>
+                    </div>
+                </aside>
+                <div class="resource-board">
+                    <div class="resource-board__header">
+                        <p class="muted">Select a format to download syllabi, labs, and code references.</p>
+                        <div class="teaching-filter" role="toolbar" aria-label="Filter teaching resources">
+                            <button class="pill filter-pill filter-pill--active" data-filter="all">All</button>
+                            <button class="pill filter-pill" data-filter="course">Courses</button>
+                            <button class="pill filter-pill" data-filter="studios">Studios</button>
+                            <button class="pill filter-pill" data-filter="lab">Labs</button>
+                        </div>
+                    </div>
+                    <div class="resource-grid" data-page="1">
+                    <article class="resource-card" data-page="1" data-type="course">
+                        <div class="resource-card__header">
+                            <span class="pill pill--outline">Course</span>
+                            <h3>Distributed Systems Architecture</h3>
+                            <p>Syllabus + slides covering orchestration patterns, observability, and edge deployments.</p>
+                            <ul class="resource__meta">
+                                <li>Senior undergrad / M1</li>
+                                <li>Updated: March 2024</li>
+                            </ul>
+                        </div>
+                        <div class="resource-card__actions">
+                            <a class="btn primary small" href="docs/cours-systemes-distribues.md">Download</a>
+                            <a class="resource__alt" href="https://github.com/younessboutyour/cours-distribues" target="_blank" rel="noopener">Code samples</a>
+                        </div>
+                    </article>
+                    <article class="resource-card" data-page="1" data-type="studios">
+                        <div class="resource-card__header">
+                            <span class="pill pill--outline">Studios</span>
+                            <h3>Responsible AI primer</h3>
+                            <p>TD packs with solutions on fairness, transparency, and robustness applied to civic datasets.</p>
+                            <ul class="resource__meta">
+                                <li>Master in AI & Data</li>
+                                <li>4 sessions · 2h each</li>
+                            </ul>
+                        </div>
+                        <div class="resource-card__actions">
+                            <a class="btn primary small" href="docs/td-intro-ia.md">Download</a>
+                            <a class="resource__alt" href="https://github.com/younessboutyour/td-ia-responsable" target="_blank" rel="noopener">Notebooks</a>
+                        </div>
+                    </article>
+                    <article class="resource-card" data-page="1" data-type="lab">
+                        <div class="resource-card__header">
+                            <span class="pill pill--outline">Lab</span>
+                            <h3>Deploying frugal AI on Kubernetes</h3>
+                            <p>Guided TP + Helm scripts for shipping TinyML services to edge clusters.</p>
+                            <ul class="resource__meta">
+                                <li>M2 · 6h lab</li>
+                                <li>Requirement: k3s cluster</li>
+                            </ul>
+                        </div>
+                        <div class="resource-card__actions">
+                            <a class="btn primary small" href="docs/tp-kubernetes.md">Download</a>
+                            <a class="resource__alt" href="https://github.com/younessboutyour/tp-k8s-frugal" target="_blank" rel="noopener">Git repo</a>
+                        </div>
+                    </article>
+                    <article class="resource-card" data-page="2" data-type="course">
+                        <div class="resource-card__header">
+                            <span class="pill pill--outline">Course</span>
+                            <h3>Logic Intelligence &amp; Knowledge Representation</h3>
+                            <p>Lecture pack covering constraint satisfaction, ASP, and reasoning under uncertainty.</p>
+                            <ul class="resource__meta">
+                                <li>Undergraduate / Graduate</li>
+                                <li>Updated: January 2024</li>
+                            </ul>
+                        </div>
+                        <div class="resource-card__actions">
+                            <a class="btn primary small" href="docs/logic-intelligence.md">Download</a>
+                            <a class="resource__alt" href="https://github.com/younessboutyour/logic-intelligence" target="_blank" rel="noopener">Exercises</a>
+                        </div>
+                    </article>
+                    <article class="resource-card" data-page="2" data-type="studios">
+                        <div class="resource-card__header">
+                            <span class="pill pill--outline">Studios</span>
+                            <h3>Deep RL Clinics</h3>
+                            <p>Hands-on notebooks exploring policy gradients, actor-critic, and MARL scenarios.</p>
+                            <ul class="resource__meta">
+                                <li>Master in AI & Data</li>
+                                <li>6 sessions · 3h each</li>
+                            </ul>
+                        </div>
+                        <div class="resource-card__actions">
+                            <a class="btn primary small" href="docs/drl-clinics.md">Download</a>
+                            <a class="resource__alt" href="https://github.com/younessboutyour/drl-clinics" target="_blank" rel="noopener">Notebooks</a>
+                        </div>
+                    </article>
+                    <article class="resource-card" data-page="2" data-type="lab">
+                        <div class="resource-card__header">
+                            <span class="pill pill--outline">Lab</span>
+                            <h3>Constraint Solving Bootcamp</h3>
+                            <p>Mini-projects integrating OR-Tools with multi-agent scheduling problems.</p>
+                            <ul class="resource__meta">
+                                <li>Graduate · 9h lab</li>
+                                <li>Requirement: Python + OR-Tools</li>
+                            </ul>
+                        </div>
+                        <div class="resource-card__actions">
+                            <a class="btn primary small" href="docs/constraint-bootcamp.md">Download</a>
+                            <a class="resource__alt" href="https://github.com/younessboutyour/constraint-bootcamp" target="_blank" rel="noopener">Git repo</a>
+                        </div>
+                    </article>
+                    </div>
+                </div>
+            </div>
+            <div class="resource-pagination" role="navigation" aria-label="Teaching resources pagination">
+                <button class="pager-btn pager-btn--active" data-page="1" aria-label="Page 1">1</button>
+                <button class="pager-btn" data-page="2" aria-label="Page 2">2</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Youness Boutyour · Abdelmalek Essaidi University</p>
+        <p>Teaching resources & labs generated with care.</p>
+    </footer>
+
+    <script>
+        const yearEl = document.getElementById('current-year');
+        if (yearEl) {
+            yearEl.textContent = new Date().getFullYear();
+        }
+
+        const resourceSection = document.querySelector('.resource-grid');
+        const pagerButtons = document.querySelectorAll('.resource-pagination .pager-btn');
+        const filterButtons = document.querySelectorAll('.teaching-filter .filter-pill');
+        let activePage = '1';
+        let activeFilter = 'all';
+
+        function updateResources() {
+            const cards = resourceSection?.querySelectorAll('.resource-card') || [];
+            cards.forEach(card => {
+                const matchesPage = card.dataset.page === activePage;
+                const matchesFilter = activeFilter === 'all' || card.dataset.type === activeFilter;
+                card.style.display = matchesPage && matchesFilter ? 'flex' : 'none';
+            });
+            pagerButtons.forEach(btn => btn.classList.toggle('pager-btn--active', btn.dataset.page === activePage));
+            filterButtons.forEach(btn => btn.classList.toggle('filter-pill--active', btn.dataset.filter === activeFilter));
+        }
+
+        pagerButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                activePage = btn.dataset.page;
+                updateResources();
+            });
+        });
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                activeFilter = btn.dataset.filter;
+                updateResources();
+            });
+        });
+
+        updateResources();
+    </script>
+</body>
+</html>

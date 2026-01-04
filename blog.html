@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog · Prof. Youness Boutyour</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="nav" aria-label="Primary">
+        <div class="nav__brand">
+            <span class="nav__name">Prof. Youness Boutyour</span>
+            <span class="nav__role">Associate Professor · AI & Distributed Systems</span>
+        </div>
+        <div class="nav__links">
+            <a href="index.html#overview">Home</a>
+            <a href="research.html">Research</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="blog.html" aria-current="page">Blog</a>
+            <a href="cv.html">CV</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+        <a class="btn primary small nav__cta" href="index.html#contact">Get in touch</a>
+    </nav>
+
+    <header class="page-hero">
+        <div>
+            <p class="eyebrow">Articles & field notes</p>
+            <h1>Research blog</h1>
+            <p class="subtitle">Insights on Artificial Intelligence, Deep Reinforcement Learning, Multi-Agent Systems, and constraint-aware intelligence for civic infrastructure.</p>
+            <div class="blog-stat-grid">
+                <div class="stat-card">
+                    <p class="stat-card__value">42</p>
+                    <p class="stat-card__label">Articles & memos</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-card__value">18</p>
+                    <p class="stat-card__label">Field experiments</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-card__value">9</p>
+                    <p class="stat-card__label">Municipal partners</p>
+                </div>
+            </div>
+            <div class="page-hero__filters">
+                <button class="pill filter-pill blog-filter-btn filter-pill--active" data-tag="all">All topics</button>
+                <button class="pill filter-pill blog-filter-btn" data-tag="ai">AI & Logic</button>
+                <button class="pill filter-pill blog-filter-btn" data-tag="drl">Deep RL</button>
+                <button class="pill filter-pill blog-filter-btn" data-tag="mas">Multi-Agent Systems</button>
+                <button class="pill filter-pill blog-filter-btn" data-tag="civic">Civic infrastructure</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="blog-layout">
+        <section class="blog-banner blog-banner--grid">
+            <div class="blog-banner__content">
+                <p class="eyebrow">Inside the lab</p>
+                <h2>Field notes & deployments</h2>
+                <p>Dispatches from living labs, research pilots, and collaborations with municipalities on AI infrastructure.</p>
+                <div class="blog-banner__actions">
+                    <a class="btn ghost light small" href="#blog-list">Browse latest articles</a>
+                    <a class="btn primary small" href="research.html">Explore research</a>
+                </div>
+            </div>
+            <div class="blog-banner__cards">
+                <article class="blog-mini-card" data-tags="ai civic">
+                    <p class="pill pill--outline">Featured</p>
+                    <h3>Deploying logic intelligence</h3>
+                    <p class="meta">June 2024 · 8 min read</p>
+                    <a class="resource__alt" href="#">Read</a>
+                </article>
+                <article class="blog-mini-card" data-tags="drl mas">
+                    <p class="pill pill--outline">Deep RL</p>
+                    <h3>Multi-agent DRL patterns</h3>
+                    <p class="meta">May 2024 · 10 min read</p>
+                    <a class="resource__alt" href="#">Read</a>
+                </article>
+                <article class="blog-mini-card" data-tags="civic">
+                    <p class="pill pill--outline">Civic tech</p>
+                    <h3>Designing data charters</h3>
+                    <p class="meta">April 2024 · 6 min read</p>
+                    <a class="resource__alt" href="#">Read</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="blog-columns" id="blog-list">
+            <div class="blog-grid">
+                <article class="blog-card" data-tags="drl mas civic">
+                    <div class="blog-card__content">
+                        <h3>Safe exploration in cooperative deep RL</h3>
+                        <p>Lessons learned from deploying MARL policies on coastal mobility fleets, with constraint monitors for safety and fairness.</p>
+                        <ul>
+                            <li>Policy shields derived from constraint solvers.</li>
+                            <li>Benchmarks for collective exploration.</li>
+                        </ul>
+                    </div>
+                    <div class="blog-card__meta">
+                        <p class="meta">April 2024 · 6 min read</p>
+                        <a class="resource__alt" href="#">Read</a>
+                    </div>
+                    <div class="blog-card__footer">
+                        <span class="tag">Deep RL</span>
+                        <span class="tag">Safety</span>
+                    </div>
+                </article>
+                <article class="blog-card" data-tags="ai logic">
+                    <div class="blog-card__content">
+                        <h3>Constraint solvers inside generative pipelines</h3>
+                        <p>Integrating OR-Tools and ASP components to constrain generative AI outputs for public procurement use cases.</p>
+                        <ul>
+                            <li>Hybrid architectures with logic-based guards.</li>
+                            <li>Compliance templates for generative systems.</li>
+                        </ul>
+                    </div>
+                    <div class="blog-card__meta">
+                        <p class="meta">March 2024 · 5 min read</p>
+                        <a class="resource__alt" href="#">Read</a>
+                    </div>
+                    <div class="blog-card__footer">
+                        <span class="tag">AI & Logic</span>
+                        <span class="tag">Constraints</span>
+                    </div>
+                </article>
+                <article class="blog-card" data-tags="ai drl civic">
+                    <div class="blog-card__content">
+                        <h3>From research memos to civic deployments</h3>
+                        <p>How we translate lab-scale prototypes into municipal pilots and sustain them in production.</p>
+                        <ul>
+                            <li>Checklist for responsible AI transfers.</li>
+                            <li>Stakeholder alignment via living labs.</li>
+                        </ul>
+                    </div>
+                    <div class="blog-card__meta">
+                        <p class="meta">February 2024 · 7 min read</p>
+                        <a class="resource__alt" href="#">Read</a>
+                    </div>
+                    <div class="blog-card__footer">
+                        <span class="tag">Civic Tech</span>
+                        <span class="tag">Deployment</span>
+                    </div>
+                </article>
+                <article class="blog-card" data-tags="mas civic">
+                    <div class="blog-card__content">
+                        <h3>Negotiation protocols for civic MAS</h3>
+                        <p>Comparing auction-based and consensus-based approaches for resource allocation in smart regions.</p>
+                        <ul>
+                            <li>Case study from Côte Durable pilots.</li>
+                            <li>Guidelines for interoperable APIs.</li>
+                        </ul>
+                    </div>
+                    <div class="blog-card__meta">
+                        <p class="meta">January 2024 · 8 min read</p>
+                        <a class="resource__alt" href="#">Read</a>
+                    </div>
+                </article>
+                <article class="blog-card" data-tags="ai logic">
+                    <div class="blog-card__content">
+                        <h3>Transparent governance for logic intelligence</h3>
+                        <p>Framework for auditing ASP-powered decision services deployed in civic procurement pipelines.</p>
+                        <ul>
+                            <li>Audit templates for symbolic systems.</li>
+                            <li>Sample dashboards for explainability.</li>
+                        </ul>
+                    </div>
+                    <div class="blog-card__meta">
+                        <p class="meta">December 2023 · 9 min read</p>
+                        <a class="resource__alt" href="#">Read</a>
+                    </div>
+                    <div class="blog-card__footer">
+                        <span class="tag">MAS</span>
+                        <span class="tag">Negotiation</span>
+                    </div>
+                </article>
+                <article class="blog-card" data-tags="ai mas">
+                    <div class="blog-card__content">
+                        <h3>Observability for distributed AI services</h3>
+                        <p>Instrumentation strategies for tracing multi-agent decisions across edge and cloud clusters.</p>
+                        <ul>
+                            <li>Common telemetry schemas.</li>
+                            <li>Best practices for alerting pipelines.</li>
+                        </ul>
+                    </div>
+                    <div class="blog-card__meta">
+                        <p class="meta">November 2023 · 8 min read</p>
+                        <a class="resource__alt" href="#">Read</a>
+                    </div>
+                    <div class="blog-card__footer">
+                        <span class="tag">Observability</span>
+                        <span class="tag">Distributed AI</span>
+                    </div>
+                </article>
+            </div>
+
+            <aside class="blog-aside">
+                <div class="blog-aside__card">
+                    <h3>Popular topics</h3>
+                    <div class="topic-chips">
+                        <button class="pill pill--outline blog-filter-btn" data-tag="ai">Explainable AI</button>
+                        <button class="pill pill--outline blog-filter-btn" data-tag="mas">Edge orchestration</button>
+                        <button class="pill pill--outline blog-filter-btn" data-tag="ai">Constraint solving</button>
+                        <button class="pill pill--outline blog-filter-btn" data-tag="civic">Federated learning</button>
+                    </div>
+                </div>
+                <div class="blog-aside__card">
+                    <h3>Subscribe</h3>
+                    <p>Monthly briefing on AI research for cities.</p>
+                    <form class="blog-subscribe">
+                        <input type="email" placeholder="you@example.com" aria-label="Email address">
+                        <button type="submit" class="btn primary small">Subscribe</button>
+                    </form>
+                </div>
+                <div class="blog-aside__card">
+                    <h3>Latest talks</h3>
+                    <ul class="talk-list">
+                        <li>AI Frontiers 2024 · “Deep RL for resilient territories.”</li>
+                        <li>Responsible AI Summit · “Transparent procurement playbooks.”</li>
+                    </ul>
+                </div>
+                <div class="blog-aside__card">
+                    <h3>Archive</h3>
+                    <ul class="archive-list">
+                        <li><a href="#">2024 (12)</a></li>
+                        <li><a href="#">2023 (15)</a></li>
+                        <li><a href="#">2022 (10)</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </section>
+
+        <div class="blog-pagination">
+            <button class="pager-btn pager-btn--active" aria-label="Previous page">&larr; Newer</button>
+            <button class="pager-btn" aria-label="Next page">Older &rarr;</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Youness Boutyour · Abdelmalek Essaidi University</p>
+        <p>Thoughts on AI, multi-agent systems, and civic tech.</p>
+    </footer>
+
+    <script>
+        const yearEl = document.getElementById('current-year');
+        if (yearEl) {
+            yearEl.textContent = new Date().getFullYear();
+        }
+
+        const blogFilterBtns = document.querySelectorAll('.blog-filter-btn');
+        const blogArticles = document.querySelectorAll('.blog-featured-card, .blog-card');
+
+        blogFilterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                blogFilterBtns.forEach(b => b.classList.remove('filter-pill--active'));
+                btn.classList.add('filter-pill--active');
+                const tag = btn.dataset.tag;
+                blogArticles.forEach(article => {
+                    const tags = article.dataset.tags?.split(' ') || [];
+                    const show = tag === 'all' || tags.includes(tag);
+                    article.style.display = show ? '' : 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
